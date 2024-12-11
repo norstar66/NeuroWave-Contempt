@@ -1,14 +1,15 @@
 package com.norstarphoenix.neurowaveconcept.controller;
 
+import com.norstarphoenix.neurowaveconcept.models.Group;
+import com.norstarphoenix.neurowaveconcept.models.User;
+import com.norstarphoenix.neurowaveconcept.services.GroupService;
+import com.norstarphoenix.neurowaveconcept.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
-
-import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
 
 @Controller
 @RequestMapping("/groups")

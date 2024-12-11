@@ -1,6 +1,6 @@
 package com.norstarphoenix.neurowaveconcept.repositories;
 
-import com.norstarphoenix.neurowavecapstone.models.Group;
+import com.norstarphoenix.neurowaveconcept.models.Group;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
