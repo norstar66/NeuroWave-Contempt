@@ -1,11 +1,11 @@
 package com.norstarphoenix.neurowaveconcept.services;
 
-import ch.qos.logback.core.model.Model;
 import com.norstarphoenix.neurowaveconcept.models.User;
 import com.norstarphoenix.neurowaveconcept.repositories.UserRepository;
 import com.norstarphoenix.neurowaveconcept.utils.AuthHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
 
 import java.util.Optional;
 
@@ -32,6 +32,7 @@ public class UserService {
             }
         }
 
+        // Correctly adding an error message to the Model
         model.addAttribute("error", "Invalid username or password");
         return false;
     }
