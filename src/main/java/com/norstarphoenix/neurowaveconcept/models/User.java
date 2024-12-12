@@ -41,6 +41,5 @@ public class User {
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "group_id")
     )
-    @ToString.Exclude
     private Set<Group> groups;
 }
